@@ -1,4 +1,6 @@
-<?php namespace Scyllaly\Geetest;
+<?php
+
+namespace Scyllaly\Geetest;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Blade;
