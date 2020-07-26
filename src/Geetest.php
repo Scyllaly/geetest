@@ -15,5 +15,4 @@ class Geetest extends Facade
     {
         return 'geetest';
     }
-
 }
