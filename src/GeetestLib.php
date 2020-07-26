@@ -1,4 +1,6 @@
-<?php namespace Scyllaly\Geetest;
+<?php
+
+namespace Scyllaly\Geetest;
 
 use Illuminate\Support\Facades\Config;
 
@@ -164,6 +166,7 @@ class GeetestLib
         if (!$this->checkValidate($challenge, $validate)) {
             return 0;
         }
+
         $query = [
             "seccode"     => $seccode,
             "timestamp"   => time(),
@@ -179,6 +182,7 @@ class GeetestLib
         if ($obj === false) {
             return 0;
         }
+
         if ($obj['seccode'] == md5($seccode)) {
             return 1;
         } else {
@@ -202,7 +206,6 @@ class GeetestLib
         } else {
             return 0;
         }
-
     }
 
     /**
@@ -216,6 +219,7 @@ class GeetestLib
         if (strlen($validate) != 32) {
             return false;
         }
+
         if (md5($this->private_key . 'geetest' . $challenge) != $validate) {
             return false;
         }
