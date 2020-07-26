@@ -97,7 +97,9 @@ class GeetestLib
             $this->failbackProcess();
             return 0;
         }
+
         $this->successProcess($challenge);
+
         return 1;
     }
 
@@ -113,6 +115,7 @@ class GeetestLib
             'challenge'   => $challenge,
             'new_captcha' => 1
         ];
+
         $this->response = $result;
     }
 
@@ -314,6 +317,7 @@ class GeetestLib
                 $data = file_get_contents($url, false, $context);
             }
         }
+ 
         return $data;
     }
 
