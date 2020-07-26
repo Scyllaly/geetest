@@ -1,4 +1,5 @@
 <?php
+
 return [
     'server-get-config' => false,
     'id'                => env('GEETEST_ID'),
