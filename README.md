@@ -17,7 +17,7 @@ Scyllaly\Geetest\GeetestServiceProvider::class,
 - insert Alias into `config/app.php` 
 
  ```php
- 'Geetest' => Scyllaly\Geetest\Facades\Geetest::class,
+ 'Geetest' => Scyllaly\Geetest\Geetest::class,
  ```
 
 - publish config & view file
