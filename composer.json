@@ -1,0 +1,45 @@
+{
+  "name": "scyllaly/geetest",
+  "description": "Geetest Package for Laravel",
+  "keywords": [
+    "Geetest",
+    "Laravel",
+    "Scyllaly"
+  ],
+  "license": "MIT",
+  "support": {
+    "email": "scyllaly@github.com"
+  },
+  "authors": [
+    {
+      "name": "Scyllaly",
+      "email": "scyllaly@github.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3",
+    "illuminate/support": "^5.5 || ^6 || ^7",
+    "illuminate/routing": "^5.5 || ^6 || ^7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "mockery/mockery": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Scyllaly\\Geetest\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Germey\\Geetest\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.1-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
