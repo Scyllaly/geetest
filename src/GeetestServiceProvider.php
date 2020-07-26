@@ -27,12 +27,12 @@ class GeetestServiceProvider extends ServiceProvider
         Route::get('geetest', 'Scyllaly\Geetest\GeetestController@getGeetest');
 
         Validator::extend('geetest', function () {
-            list($geetest_challenge, $geetest_validate, $geetest_seccode) = array_values(\request()->only('geetest_challenge', 'geetest_validate', 'geetest_seccode'));
+            list($geetest_challenge, $geetest_validate, $geetest_seccode) = array_values(request()->only('geetest_challenge', 'geetest_validate', 'geetest_seccode'));
 
             $data = [
                 'user_id'     => @Auth::user() ? @Auth::user()->id : 'UnLoginUser',
                 'client_type' => 'web',
-                'ip_address'  => \request()->ip()
+                'ip_address'  => request()->ip()
             ];
 
             if (session()->get('gtserver') == 1) {
