@@ -1,6 +1,5 @@
 <?php namespace Scyllaly\Geetest;
 
-
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Request;
 
