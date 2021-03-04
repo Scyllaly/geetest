@@ -1,4 +1,4 @@
-# Geetest 极验
+Geetest for Laravel
 
 ## Install
 
